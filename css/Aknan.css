@@ -131,11 +131,13 @@ header {
         width: calc(45% - 10px); /* عرض المنتج بنسبة 50% لشاشات الهواتف */
         flex-direction: column;
         flex-wrap: wrap;
+ 
     }
     .product-row{
         flex-wrap: wrap;
         justify-content: space-evenly;
         top:-10px;
+        margin-bottom: 0px;
 
     }
     .product-details h3{
@@ -194,6 +196,7 @@ header {
         display: none !important; /* إخفاء زر "أضف إلى العربة" */
         margin-left: 5px !important;
     }
+
 
 }
 
