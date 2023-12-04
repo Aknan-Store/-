@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px; /* ارتفاع الهيدر الافتراضي */
+    height: 65px !important; /* ارتفاع الهيدر الافتراضي */
 }
 
 .logo img {
@@ -48,7 +48,7 @@ header {
     }
 
     .logo img {
-        max-height: 70px; /* ارتفاع اللوجو للشاشات الصغيرة */
+        max-height: 65px; /* ارتفاع اللوجو للشاشات الصغيرة */
     }
 
     .navigation{
@@ -135,6 +135,7 @@ header {
     .product-row{
         flex-wrap: wrap;
         justify-content: space-evenly;
+        top:-10px;
 
     }
     .product-details h3{
@@ -145,13 +146,19 @@ header {
             font-size: 10px !important;
             }
     .product-details {
-    font-size: 10px;
+    font-size: 10px !important;
+    padding: 11px !important;
     }
     .buttons{
         padding: 2px 4px;
         font-size: 14px;
-        display: inline-block !important;
+        display: block !important;
         flex-wrap: nowrap;
+        transform: translateX(0px) !important;
+    }
+    .hashtag p{
+        margin-top: -15px !important;
+        font-size: 21px !important;
     }
     .button1,
     .button2{
