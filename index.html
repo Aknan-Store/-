@@ -558,11 +558,24 @@
                 </div>
             </div>
         </div>
-        <!-- زر لعرض المزيد من المنتجات -->
-        <div class="load-more">
-            <button id="showMoreButton">عرض المزيد من المنتجات</button>
-            <p id="additionalProducts" style="display: none;">هذه المنتجات المتاحة حالياً. انتظر المزيد!</p>
-        </div>
+<!-- زر لعرض المزيد من المنتجات -->
+<div class="load-more">
+    <button id="showMoreButton">عرض المزيد من المنتجات</button>
+    <p id="additionalProducts" style="display: none;">هذه المنتجات المتاحة حالياً. انتظر المزيد!</p>
+</div>
+
+<script>
+    // احصل على الزر والرسالة
+    const showMoreButton = document.getElementById('showMoreButton');
+    const additionalProducts = document.getElementById('additionalProducts');
+
+    // أضف حدث النقر إلى الزر
+    showMoreButton.addEventListener('click', function() {
+        // قم بعكس عرض الرسالة
+        additionalProducts.style.display = (additionalProducts.style.display === 'none') ? 'block' : 'none';
+    });
+</script>
+
     </div>
                     <!--االمقاسات -->
                     <div class="Sizes">
