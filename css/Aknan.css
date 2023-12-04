@@ -196,7 +196,10 @@ header {
         display: none !important; /* إخفاء زر "أضف إلى العربة" */
         margin-left: 5px !important;
     }
-
+    
+.products {
+    padding-top: 60px;
+}
 
 }
 
