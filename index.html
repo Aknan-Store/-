@@ -639,75 +639,106 @@
 
 
     </div>
-                    <!--االمقاسات -->
-                    <div class="Sizes">
-                    <h2 >المقــاســــات</h2>
-                    </div>
-                    <div class="product-row">
-                        
-                        
-                        <!-- في داخل عنصر .product -->
-                        <div class="product" >
-                            <div class="product-image">
-                                <img src="images/A20.jpg"id="sizea" >
-                            </div>
-                            <div class="product-details">
-                                <h3>المقاسات بالسنتي متر </h3>
-                            </div>
-                        </div>
-                        <!-- في داخل عنصر .product -->
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/D20.jpg" id="sized">
-                            </div>
-                            <div class="product-details">
-                                <h3>المقاسات بالسنتي متر </h3>
-                            </div>
-                        </div>
-                        <!-- في داخل عنصر .product -->
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/E20.jpg" id="sizee">
-                            </div>
-                            <div class="product-details">
-                                <h3>المقاسات بالسنتي متر </h3>
-                            </div>
-                        </div>
-                        <!-- في داخل عنصر .product -->
-                        <div class="product">
-                            <div class="product-image" >
-                                <img src="images/C20.jpg" id="sizec" >
-                            </div>
-                            <div class="product-details" >
-                                <h3>المقاسات بالسنتي متر </h3>
-                            </div>
-                        </div>
-                        
-                                </div>
-                            </div>
-                            <div class="product-row" style="justify-content: space-evenly;" >
-                                
-                                
-                                <!-- في داخل عنصر .product -->
-                                <div class="product">
-                                    <div class="product-image">
-                                        <img src="images/G20.jpg" id="sizeg">
-                                    </div>
-                                    <div class="product-details">
-                                        <h3>المقاسات بالسنتي متر </h3>
-                                    </div>
-                                </div>
-                                <!-- في داخل عنصر .product -->
-                                <div class="product">
-                                    <div class="product-image">
-                                        <img src="images/h20.jpg" id="sizeh">
-                                    </div>
-                                    <div class="product-details">
-                                        <h3>المقاسات بالسنتي متر </h3>
-                                    </div>
-                                </div>
-                                        </div>
-    <!-- الفوتر -->
+    <!--االمقاسات -->
+    <div class="Sizes">
+    <h2 >المقــاســــات</h2>
+    </div>
+    <div class="product-row">
+        
+        
+        <!-- في داخل عنصر .product -->
+        <div class="product" >
+            <div class="product-image">
+                <img src="images/A20.jpg"id="sizea" >
+            </div>
+            <div class="product-details">
+                <h3>المقاسات بالسنتي متر </h3>
+            </div>
+        </div>
+        <!-- في داخل عنصر .product -->
+        <div class="product">
+            <div class="product-image">
+                <img src="images/D20.jpg" id="sized">
+            </div>
+            <div class="product-details">
+                <h3>المقاسات بالسنتي متر </h3>
+            </div>
+        </div>
+        <!-- في داخل عنصر .product -->
+        <div class="product">
+            <div class="product-image">
+                <img src="images/E20.jpg" id="sizee">
+            </div>
+            <div class="product-details">
+                <h3>المقاسات بالسنتي متر </h3>
+            </div>
+        </div>
+        <!-- في داخل عنصر .product -->
+        <div class="product">
+            <div class="product-image" >
+                <img src="images/C20.jpg" id="sizec" >
+            </div>
+            <div class="product-details" >
+                <h3>المقاسات بالسنتي متر </h3>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    <div class="product-row" style="justify-content: space-evenly;" >
+        
+        
+        <!-- في داخل عنصر .product -->
+        <div class="product">
+            <div class="product-image">
+                <img src="images/G20.jpg" id="sizeg">
+            </div>
+            <div class="product-details">
+                <h3>المقاسات بالسنتي متر </h3>
+            </div>
+        </div>
+        <!-- في داخل عنصر .product -->
+        <div class="product">
+            <div class="product-image">
+                <img src="images/h20.jpg" id="sizeh">
+            </div>
+            <div class="product-details">
+                <h3>المقاسات بالسنتي متر </h3>
+            </div>
+        </div>
+        <!-- في داخل عنصر .product -->
+        <div class="product">
+            <div class="product-image">
+                <img src="images/J20.jpg" id="sizeh">
+            </div>
+            <div class="product-details">
+                <h3>المقاسات بالسنتي متر </h3>
+            </div>
+        </div>
+        </div>
+<!-- العنصر لعرض عدد الزيارات -->
+<div class="visitor-box">
+    <h4 class="visit"> :عدد الزيارات<div id="visitorsCount">0</div></h4>
+    
+  </div>
+                <script>
+                        // استدعاء العداد من العنصر
+                        const visitorsCount = document.getElementById('visitorsCount');
+                    
+                        // تحديث قيمة العداد
+                    function updateVisitorCount() {
+                    // قم بزيادة العداد عند كل زيارة جديدة
+                    let count = localStorage.getItem('visitorsCount') || 0;
+                    count++;
+                    localStorage.setItem('visitorsCount', count);
+                    visitorsCount.textContent = count;
+                    }
+                                    
+                    // اتصال الدالة لزيارة الموقع
+                    updateVisitorCount();
+                    </script>
+                                    
+<!-- الفوتر -->
     <footer>
         <div class="social-icons">
             <a href="https://web.facebook.com/Aknan1999" target="_blank"><i class="fab fa-facebook-f"></i></a>
