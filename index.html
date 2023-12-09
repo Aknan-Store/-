@@ -738,7 +738,23 @@
                     // اتصال الدالة لزيارة الموقع
                     updateVisitorCount();
                     </script>
-                                    
+                    <script>// تحقق مما إذا كان هناك عدد الزوار مخزن مسبقاً في localStorage
+                        if (localStorage.getItem('visits')) {
+                          let count = parseInt(localStorage.getItem('visits'));
+                          count++;
+                          localStorage.setItem('visits', count);
+                        } else {
+                          localStorage.setItem('visits', 1);
+                        }
+                        
+                        // عرض عدد الزوار في صفحة HTML
+                        document.body.onload = function() {
+                          let visitsCount = localStorage.getItem('visits');
+                          let counterElement = document.createElement('div');
+                          counterElement.innerHTML = `<p>عدد الزوار: ${visitsCount}</p>`;
+                          document.body.appendChild(counterElement);
+                        };
+                        </script>
 <!-- الفوتر -->
     <footer>
         <div class="social-icons">
